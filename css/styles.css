@@ -68,14 +68,14 @@ li {
 
 .branding {
     grid-area: branding;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     display: grid;
     grid-auto-flow: column;
     justify-content: flex-start;
     align-items: center;
     align-content: start;
-    gap: 20px;
+    gap: 15px;
     padding: 20px 15px;
 }
 
@@ -90,9 +90,91 @@ li {
 .header {
     grid-area: header;
     background-color: var(--secondary-color);
+    box-shadow: 0px 5px 5px hsla(0, 0%, 83%, 0.883);
 }
 
 .content {
     grid-area: content;
     background-color: var(--background-color);
+    display: grid;
+    grid-template: repeat(2, 1fr) / 4fr 2fr;
+    grid-template-areas:
+        'projects announcements'
+        'projects trending';
+}
+
+.projects {
+    grid-area: projects;
+    padding: 25px;
+    display: grid;
+    gap: 25px;
+    grid-template: 40px repeat(3, 1fr) / repeat(2, 1fr);
+}
+
+.projects > h2 {
+    grid-area: 1 / 1 / 2 / 3;
+    font-weight: 500;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
+
+.project-card {
+    background-color: var(--secondary-color);
+    border-left: 8px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 1px 3px 3px hsla(0, 0%, 83%, 0.754);
+}
+
+.project-details {
+    margin: 35px 20px;
+    width: 75%;
+}
+
+.project-details > * {
+    margin: 5px 0px;
+}
+
+.project-details > h3 {
+    font-weight: 600;
+}
+
+.project-details > p {
+    color: grey;
+}
+
+.project-buttons {
+    display: grid;
+    grid-template: 1fr / 1fr repeat(3, 30px);
+    grid-template-areas: '. favorite watch share';
+    gap: 30px;
+    padding-right: 30px;
+}
+
+.favorite {
+    grid-area: favorite;
+}
+
+.watch {
+    grid-area: watch;
+}
+
+.share {
+    grid-area: share;
+}
+
+.project-buttons > svg {
+    width: 25px;
+    height: 25px;
+}
+
+.projects,
+.announcements,
+.trending {
+    border: 1px dashed red;
 }
