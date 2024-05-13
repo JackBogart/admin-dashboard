@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template-areas:
+        'sidebar header'
+        'sidebar content';
+    width: 1500px;
+    height: 1000px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar,
+.header,
+.content {
+    border: 1px dashed red;
+}
