@@ -1,23 +1,38 @@
+:root {
+    --primary-color: hsl(193, 100%, 55%);
+    --secondary-color: hsl(0, 0%, 100%);
+    --background-color: hsl(208, 87%, 94%);
+    --accent-color: hsl(44, 100%, 53%);
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    display: grid;
+    min-height: 100%;
+    width: 100%;
+    display: inline-grid;
+    justify-content: center;
     grid-template: 1fr 4fr / 1fr 4fr;
     grid-template-areas:
         'sidebar header'
         'sidebar content';
-    width: 1500px;
-    height: 1000px;
 }
 
 .sidebar {
     grid-area: sidebar;
+    background-color: var(--primary-color);
 }
 
 .header {
     grid-area: header;
+    background-color: var(--secondary-color);
 }
 
 .content {
     grid-area: content;
+    background-color: var(--background-color);
 }
 
 .sidebar,
