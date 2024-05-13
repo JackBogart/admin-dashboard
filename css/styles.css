@@ -165,6 +165,25 @@ li {
 
 .trending {
     grid-area: trending;
+    padding: 25px;
+    display: grid;
+    gap: 25px;
+    grid-template: 40px 1fr / 1fr;
+}
+
+.trending > h2 {
+    grid-area: 1 / 1 / 2 / 2;
+    font-weight: 500;
+    grid-template: repeat(4, 1fr) / 1fr;
+}
+
+.trending-cards {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 0px 30px;
+    display: grid;
+    align-content: space-evenly;
+    box-shadow: 1px 3px 3px hsla(0, 0%, 83%, 0.754);
 }
 
 .project-card {
@@ -218,8 +237,22 @@ li {
     height: 25px;
 }
 
-.projects,
-.announcements,
-.trending {
-    border: 1px dashed red;
+.trending-entry {
+    display: grid;
+    grid-template: 1fr / 60px 1fr;
+    grid-template-areas: 'profile-picture profile-info';
+    gap: 5px;
+    align-items: center;
+}
+
+.profile-picture {
+    grid-area: profile-picture;
+}
+
+.profile-info {
+    grid-area: profile-info;
+}
+
+.profile-info > span {
+    color: gray;
 }
