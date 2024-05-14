@@ -155,7 +155,7 @@ li {
 }
 
 .announcement-card > p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .announcement-card > p {
@@ -198,7 +198,7 @@ li {
 
 .project-details > p {
     color: grey;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .project-buttons {
@@ -240,6 +240,7 @@ li {
 
 .profile-info {
     grid-area: profile-info;
+    font-size: 1.1rem;
 }
 
 .profile-info > span {
