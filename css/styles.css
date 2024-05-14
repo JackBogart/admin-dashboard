@@ -92,10 +92,11 @@ li {
     background-color: var(--secondary-color);
     box-shadow: 0px 5px 5px hsla(0, 0%, 83%, 0.883);
     display: grid;
-    grid-template: 85px 1fr / 5fr 3fr;
+    grid-template: 85px 1fr / 5fr 2fr;
     grid-template-areas:
         'search-bar user-settings'
         'user-info user-buttons';
+    column-gap: 25px;
 }
 
 .content {
