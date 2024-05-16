@@ -1,7 +1,7 @@
 :root {
     --primary-color: hsl(202, 100%, 50%);
     --secondary-color: hsl(0, 0%, 100%);
-    --background-color: hsl(208, 87%, 94%);
+    --background-color: hsl(207, 43%, 96%);
     --accent-color: hsl(44, 100%, 53%);
 }
 
@@ -164,6 +164,8 @@ li {
 
 .trending {
     grid-area: trending;
+    display: grid;
+    grid-template: 60px 1fr / 1fr;
     padding: 25px;
 }
 
@@ -196,9 +198,13 @@ li {
     font-weight: 600;
 }
 
+.project-details > h3 {
+    font-size: 1.3rem;
+}
+
 .project-details > p {
     color: grey;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .project-buttons {
