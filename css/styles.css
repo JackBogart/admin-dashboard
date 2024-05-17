@@ -95,6 +95,7 @@ li {
         'search-bar user-settings'
         'user-info user-buttons';
     padding: 10px 40px;
+    z-index: 0; /* Required for the header's box shadow to appear below it due to DOM rendering.*/
 }
 
 .content {
